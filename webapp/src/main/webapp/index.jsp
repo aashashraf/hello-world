@@ -1,72 +1,34 @@
-<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-<p>
-<label>Name
-<input type="text" name="customer_name" required>
-</label> 
-</p>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
-<p>
-<label>Phone 
-<input type="tel" name="phone_number">
-</label>
-</p>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
 
-<p>
-<label>Email 
-<input type="email" name="email_address">
-</label>
-</p>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
 
-<fieldset>
-<legend>Which taxi do you require?</legend>
-<p><label> <input type="radio" name="taxi" required value="car"> Car </label></p>
-<p><label> <input type="radio" name="taxi" required value="van"> Van </label></p>
-<p><label> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
-</fieldset>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-<fieldset>
-<legend>Extras</legend>
-<p><label> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
-<p><label> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
-<p><label> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
-</fieldset>
-
-<p>
-<label>Pickup Date/Time
-<input type="datetime-local" name="pickup_time" required>
-</label>
-</p>
-	
-<p>
-<label>Pickup Place
-<select id="pickup_place" name="pickup_place">
-<option value="" selected="selected">Select One</option>
-<option value="office" >Taxi Office</option>
-<option value="town_hall" >Town Hall</option>
-<option value="telepathy" >We'll Guess!</option>
-</select>
-</label> 
-</p>
-
-<p>
-<label>Dropoff Place
-<input type="text" name="dropoff_place" required list="destinations">
-</label>
-
-<datalist id="destinations">
-<option value="Airport">
-<option value="Beach">
-<option value="Fred Flinstone's House">
-</datalist>
-</p>
-
-<p>
-<label>Special Instructions
-<textarea name="comments" maxlength="500"></textarea>
-</label>
-</p>
-
-<p><button>Submit Booking</button></p>
-
-</form>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
